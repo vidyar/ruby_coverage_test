@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+ - 1.9.2
+ 
+before_script:
+ - mkdir -p ./shippable/codecoverage
+
+script:
+ - echo "Nothing to see here"
+ - cp coverage.csv ./shippable/codecoverage
