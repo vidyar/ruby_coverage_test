@@ -5,12 +5,16 @@ rvm:
  #- 1.9.2
  #- 1.9.3
  - 2.0.0
- - 2.1.0
+ #- 2.1.0
  
 before_script:
  - mkdir -p ./shippable/codecoverage
 
 
-script:
- - echo "Nothing to see here"
- - cp coverage.csv ./shippable/codecoverage
+
+install: true
+script: true 
+before_archive:
+      - cp coverage.csv ./shippable/codecoverage
+after_archive:
+      - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
