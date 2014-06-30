@@ -10,11 +10,10 @@ rvm:
 before_script:
  - mkdir -p ./shippable/codecoverage
 
-
-
 install: true
 script: true 
 before_archive:
       - cp coverage.csv ./shippable/codecoverage
+
 after_archive:
       - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
