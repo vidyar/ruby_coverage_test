@@ -13,5 +13,6 @@ before_script:
 install: true
 script: cp coverage.csv ./shippable/codecoverage
 
-after_archive:
-      - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
+#after_archive:
+ #     - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
+archive: true
