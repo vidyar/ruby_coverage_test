@@ -16,3 +16,5 @@ script: cp coverage.csv ./shippable/codecoverage
 #after_archive:
  #     - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
 archive: true
+
+build_image: shippable/minv2
