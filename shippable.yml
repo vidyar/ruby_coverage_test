@@ -18,3 +18,5 @@ script: cp coverage.csv ./shippable/codecoverage
 archive: true
 
 build_image: shippable/minv2
+
+commit_container: vidyar/ruby-coverage
