@@ -22,7 +22,7 @@ archive: true
 #build_image: shippable/minv2
 
 commit_container: vidyar/ruby-coverage
-build_image:
-   name:  vidyar/phpmongo:2.1
-   net: host
-   privileged: true
+#build_image:
+ #  name:  vidyar/phpmongo:2.1
+ #  net: host
+  # privileged: true
