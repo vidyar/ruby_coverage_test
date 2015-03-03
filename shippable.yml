@@ -10,13 +10,19 @@ rvm:
 before_script:
  - mkdir -p ./shippable/codecoverage
 
-install: true
+install: 
+ - ifconfig
+ 
 script: cp coverage.csv ./shippable/codecoverage
 
 #after_archive:
  #     - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
 archive: true
 
-build_image: shippable/minv2
+#build_image: shippable/minv2
 
 commit_container: vidyar/ruby-coverage
+build_image:
+   name:  vidyar/phpmongo:2.1
+   net: host
+   privileged: true
