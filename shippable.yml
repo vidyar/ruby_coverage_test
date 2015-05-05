@@ -21,7 +21,7 @@ archive: true
 
 #build_image: shippable/minv2
 
-commit_container: vidyar/ruby-coverage
+#commit_container: vidyar/ruby-coverage
 #build_image:
  #  name:  vidyar/phpmongo:2.1
  #  net: host
